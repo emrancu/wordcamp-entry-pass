@@ -10,14 +10,16 @@ class AdminSideNavProvider implements ServiceProviderContract
 {
     public function boot(): void
     {
-        add_menu_page(
-            "WordCamp",
-            "WordCamp",
-            'manage_options',
-            AdminSlug::MAIN->value,
-            [new SideNavController(), 'index'],
-              '',
-             100
-        );
+        add_action('admin_menu', function () {
+            add_menu_page(
+                "WordCamp",
+                "WordCamp",
+                'manage_options',
+                AdminSlug::MAIN->value,
+                [new SideNavController(), 'index'],
+                '',
+                100
+            );
+        });
     }
 }
