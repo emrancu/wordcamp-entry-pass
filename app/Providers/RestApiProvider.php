@@ -29,22 +29,6 @@ class RestApiProvider implements ServiceProviderContract
         });
     }
 
-// Define the callback function for the REST API endpoint
-    function myplugin_rest_example($request)
-    {
-        // Build a response array
-        $response = array(
-            'message' => 'Hello, world!',
-            'data' => array(
-                'foo' => 'bar',
-                'baz' => 123,
-            ),
-        );
-
-        // Return the response as a JSON object
-        return new WP_REST_Response($response, 200);
-    }
-
     public function enqueue(): void
     {
         wp_enqueue_script('wep-app-script', wep_base_url('public/js/app.js'), [], time(), true);
