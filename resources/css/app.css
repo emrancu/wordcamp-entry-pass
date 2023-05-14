@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .table{
+        @apply w-full text-sm text-left text-gray-500 dark:text-gray-400
+    }
+
+    .table > thead{
+        @apply text-xs text-gray-700 uppercase bg-gray-50
+    }
+
+    .table > thead th{
+        @apply py-3 px-1
+    }
+    .table > thead th.action{
+        @apply min-w-[280px]
+    }
+    .table > tbody tr{
+        @apply  border-b
+    }
+    .table > tbody tr td{
+        @apply py-1 px-1
+    }
+    .table > tbody tr td img{
+        @apply max-h-[100px]
+    }
+
+    .btn{
+        @apply inline-block px-6 py-2.5  text-white font-medium text-xs leading-tight uppercase rounded shadow-md  hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg
+    }
+
+    .btn.primary{
+        @apply  bg-blue-600 text-white  hover:bg-blue-700  focus:bg-blue-700 focus:shadow-lg  active:bg-blue-800
+    }
+
+    .badge{
+        @apply text-xs font-bold mr-2 px-2.5 py-0.5 rounded
+    }
+
+    .badge.secondary{
+        @apply bg-indigo-100 text-indigo-800
+    }
+
+    .checkbox-active{
+       background-color: #47ff4b !important
+    }
+}
+

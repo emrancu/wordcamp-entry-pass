@@ -1,0 +1,38 @@
+{
+  "name": "wordcamp/entrypass",
+  "description": "WordCamp Entry pass for Food and Others",
+  "license": "MIT",
+  "homepage": "https://github.com/emrancu/PluginMaster",
+  "support": {
+    "issues": "https://github.com/emrancu/PluginMaster/issues",
+    "source": "https://github.com/emrancu/PluginMaster"
+  },
+  "authors": [
+    {
+      "name": "AL EMRAN",
+      "email": "emrancu1@gmail.com"
+    }
+  ],
+  "keywords": [
+    "WordCamp",
+    "WordCamp ENtry Pass"
+  ],
+  "type": "project",
+  "autoload": {
+    "classmap": [],
+    "files": [
+      "app/Supports/global_functions.php"
+    ],
+    "psr-4": {
+      "WordCamp\\App\\": "app/",
+      "WordCamp\\Bootstrap\\": "bootstrap/"
+    }
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
